@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="pitiupi.velha" default="jar" basedir=".">
+
+    <property name="core.jar" value="../../pitiupi/dist/pitiupi.jar"/>
+
+    <target name="jar">
+        <mkdir dir="build/classes"/>
+        <javac srcdir="src" destdir="build/classes" release="17" encoding="UTF-8"
+               includeantruntime="false" classpath="${core.jar}"/>
+        <copy todir="build/classes/META-INF">
+            <fileset dir="src/META-INF"/>
+        </copy>
+        <jar destfile="dist/pitiupi.velha.jar" basedir="build/classes"/>
+    </target>
+
+    <target name="clean">
+        <delete dir="build"/>
+        <delete dir="dist"/>
+    </target>
+</project>

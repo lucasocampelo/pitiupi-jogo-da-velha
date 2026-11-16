@@ -20,6 +20,13 @@
       "build": "ant",
       "jar": "dist/pitiupi.ping.jar",
       "menuCategory": "Social"
+    },
+    {
+      "id": "velha",
+      "dir": "plugins/velha",
+      "build": "ant",
+      "jar": "dist/pitiupi.velha.jar",
+      "menuCategory": "Jogos"
     }
   ]
 }
